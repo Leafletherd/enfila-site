@@ -17,7 +17,7 @@
 <body>
 
 <!-- Nav -->
-<nav>
+<nav class="band">
   <a href="index.html" class="nav-wordmark" aria-label="Enfila home">
     <svg width="22" height="22" viewBox="0 0 1024 1024" aria-hidden="true">
       <rect x="194.56" y="275.46" width="482.51" height="63.49" rx="31.74" fill="#6E9FB5"/>
@@ -30,14 +30,14 @@
   </a>
   <div class="nav-links">
     <a href="privacy.html">Privacy</a>
-    <a href="mailto:Hello@enfila.app">Contact</a>
+    <a href="contact.html">Contact</a>
   </div>
 </nav>
 
-<div class="rule"><hr></div>
+<div class="rule band"><hr></div>
 
 <!-- Hero -->
-<section class="hero">
+<section class="hero band">
   <div class="hero-text">
     <div class="app-icon-mark">
       <svg width="44" height="44" viewBox="0 0 1024 1024" aria-hidden="true">
@@ -60,7 +60,7 @@
     <!-- BUY ROW — keep when shipping; remove when pre-launch. -->
     <div class="buy-row">
       <a href="https://enfila.lemonsqueezy.com/checkout/buy/a7d39575-3db5-4ff4-99bb-8c974c9e13f9" class="buy-btn">Buy Enfila</a>
-      <span class="buy-note"><strong class="buy-price">$PRICE</strong> — one-time purchase. Mac only.</span>
+      <span class="buy-note"><strong class="buy-price">$9.99</strong> — one-time purchase. Mac only.</span>
     </div>
     <!-- /BUY ROW -->
 
@@ -87,17 +87,17 @@
     </div>
   </div>
 
-  <!-- Dual screenshot: replace img/stage-*.png with real app exports (same paths). -->
+  <!-- Dual screenshot: dark behind, light in front -->
   <div class="hero-graphic">
     <img class="shot-back" src="img/stage-dark.png" alt="" aria-hidden="true" loading="lazy">
     <img class="shot-front" src="img/stage-light.png" alt="The Enfila staging window: albums and tracks in a single play-order queue." loading="lazy">
   </div>
 </section>
 
-<div class="rule"><hr></div>
+<div class="rule band"><hr></div>
 
 <!-- The problem -->
-<section class="section">
+<section class="section band">
   <div class="section-label">The problem</div>
   <div class="section-body">
     <p>Many devices play files in the order they were written to the disk — not by name, not by track number, not by tag. Copy an album the normal way and it plays scrambled.</p>
@@ -105,67 +105,89 @@
   </div>
 </section>
 
-<div class="rule"><hr></div>
-
-<!-- How it works -->
-<section class="section">
-  <div class="section-label">How it works</div>
-  <ol class="beats">
-    <li>Drag in albums or loose files. Tracks sort by number; albums become groups.</li>
-    <li>Arrange the order. One sequence runs across the whole queue — that's the play order.</li>
-    <li>Copy. Enfila writes one file at a time, in that exact order.</li>
-  </ol>
-</section>
-
-<div class="rule"><hr></div>
-
-<!-- Format handled -->
-<section class="section">
-  <div class="section-label">Format handled</div>
-  <div class="section-body">
-    <p>FLAC, M4A, WAV, AIFF — anything that isn't already the right format is converted before the copy. Originals are never touched. Tags carry over. You pick the bitrate.</p>
+<!-- How it works (text + drag screenshot) -->
+<section class="feature band">
+  <div class="feature-text">
+    <div class="section-label">How it works</div>
+    <ol class="beats">
+      <li>Drag in albums or loose files. Tracks sort by number; albums become groups.</li>
+      <li>Arrange the order. One sequence runs across the whole queue — that's the play order.</li>
+      <li>Copy. Enfila writes one file at a time, in that exact order.</li>
+    </ol>
+  </div>
+  <div class="feature-shot">
+    <picture>
+      <source srcset="img/drag-dark.png" media="(prefers-color-scheme: dark)">
+      <img src="img/drag-light.png" alt="Dragging a track onto the Enfila window to stage it." loading="lazy">
+    </picture>
   </div>
 </section>
 
-<div class="rule"><hr></div>
+<!-- Format handled (convert screenshot + text) -->
+<section class="feature reverse band">
+  <div class="feature-text">
+    <div class="section-label">Format handled</div>
+    <h2>Whatever the device plays, it gets.</h2>
+    <p>FLAC, M4A, WAV, AIFF — anything that isn't already the right format is converted to MP3 before the copy. Originals are never touched. Tags carry over. You pick the bitrate.</p>
+  </div>
+  <div class="feature-shot">
+    <picture>
+      <source srcset="img/convert-dark.png" media="(prefers-color-scheme: dark)">
+      <img src="img/convert-light.png" alt="Enfila converting non-MP3 tracks before copying." loading="lazy">
+    </picture>
+  </div>
+</section>
+
+<!-- Safe copy (text + confirm screenshot) -->
+<section class="feature band">
+  <div class="feature-text">
+    <div class="section-label">Before it writes</div>
+    <h2>You see exactly what will happen.</h2>
+    <p>One confirmation: how many tracks, what's being replaced, and where. Choose whether to wipe the folder first. Subfolders like a watch's Maps folder are left untouched.</p>
+  </div>
+  <div class="feature-shot">
+    <picture>
+      <source srcset="img/confirm-dark.png" media="(prefers-color-scheme: dark)">
+      <img src="img/confirm-light.png" alt="Enfila's copy confirmation showing track count, what's replaced, and the destination." loading="lazy">
+    </picture>
+  </div>
+</section>
+
+<div class="rule band"><hr></div>
 
 <!-- Not just watches -->
-<section class="section">
+<section class="section band">
   <div class="section-label">Not just watches</div>
   <div class="section-body">
     <p>Sport watches, car stereos, cheap MP3 players, USB sticks — they share the same quirk and the same fix. Point Enfila at the folder and it does the ordered copy.</p>
   </div>
 </section>
 
-<div class="rule"><hr></div>
-
-<!-- Close -->
-<section class="section" id="get">
-  <div class="section-label">Get Enfila</div>
-  <p class="close-caption">Load it once, in order. Mac only. We'll email you when there's news.</p>
-
-  <!-- EMAIL CAPTURE — keep when pre-launch; swap for the buy row below when shipping. -->
-  <form class="email-form" action="FORM_ENDPOINT" method="post">
-    <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
-    <button type="submit">Notify me</button>
-  </form>
-  <p class="form-note">No spam. One email when it ships.</p>
-  <!-- /EMAIL CAPTURE -->
-
-  <!-- BUY ROW — keep when shipping; remove when pre-launch.
-  <div class="buy-row">
-    <a href="https://enfila.lemonsqueezy.com/checkout/buy/a7d39575-3db5-4ff4-99bb-8c974c9e13f9" class="buy-btn">Buy Enfila</a>
-    <span class="buy-note"><strong class="buy-price">$PRICE</strong> — one-time purchase. Mac only.</span>
+<!-- Close (CTA + done screenshot) -->
+<section class="feature band" id="get">
+  <div class="feature-text">
+    <div class="section-label">Get Enfila</div>
+    <h2>Load it once, in order.</h2>
+    <p class="close-caption">A one-time purchase. Mac only. Notarized by Apple, runs entirely offline.</p>
+    <div class="buy-row">
+      <a href="https://enfila.lemonsqueezy.com/checkout/buy/a7d39575-3db5-4ff4-99bb-8c974c9e13f9" class="buy-btn">Buy Enfila</a>
+      <span class="buy-note"><strong class="buy-price">$9.99</strong> — one-time.</span>
+    </div>
   </div>
-  -->
+  <div class="feature-shot">
+    <picture>
+      <source srcset="img/done-dark.png" media="(prefers-color-scheme: dark)">
+      <img src="img/done-light.png" alt="Enfila finished: files copied in order." loading="lazy">
+    </picture>
+  </div>
 </section>
 
-<footer>
+<footer class="band">
   <span class="footer-copy">© 2026 Enfila</span>
   <div class="footer-links">
     <a href="index.html">Home</a>
     <a href="privacy.html">Privacy</a>
-    <a href="mailto:Hello@enfila.app">Contact</a>
+    <a href="contact.html">Contact</a>
   </div>
 </footer>
 
