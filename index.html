@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enfila — your music plays in the order you meant</title>
+<meta name="description" content="Enfila stages music and writes it to a device in a deliberate order, so it plays the way you arranged it. A native macOS tool.">
+<meta property="og:title" content="Enfila — your music plays in the order you meant">
+<meta property="og:description" content="Most players read files in the order they were copied, not the order you want. Enfila fixes that.">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <a href="index.html" class="nav-wordmark" aria-label="Enfila home">
+    <svg width="22" height="22" viewBox="0 0 1024 1024" aria-hidden="true">
+      <rect x="194.56" y="275.46" width="482.51" height="63.49" rx="31.74" fill="#6E9FB5"/>
+      <rect x="194.56" y="377.86" width="634.88" height="63.49" rx="31.74" fill="#8FA3B1"/>
+      <rect x="194.56" y="480.26" width="393.63" height="63.49" rx="31.74" fill="#5A7080"/>
+      <rect x="194.56" y="582.66" width="546.00" height="63.49" rx="31.74" fill="#5A7080"/>
+      <rect x="194.56" y="685.06" width="304.74" height="63.49" rx="31.74" fill="#3A4149"/>
+    </svg>
+    <span class="nav-wordmark-text">Enfila</span>
+  </a>
+  <div class="nav-links">
+    <a href="privacy.html">Privacy</a>
+    <a href="mailto:Hello@enfila.app">Contact</a>
+  </div>
+</nav>
+
+<div class="rule"><hr></div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-text">
+    <div class="app-icon-mark">
+      <svg width="44" height="44" viewBox="0 0 1024 1024" aria-hidden="true">
+        <rect x="194.56" y="275.46" width="482.51" height="63.49" rx="31.74" fill="#6E9FB5"/>
+        <rect x="194.56" y="377.86" width="634.88" height="63.49" rx="31.74" fill="#8FA3B1"/>
+        <rect x="194.56" y="480.26" width="393.63" height="63.49" rx="31.74" fill="#5A7080"/>
+        <rect x="194.56" y="582.66" width="546.00" height="63.49" rx="31.74" fill="#5A7080"/>
+        <rect x="194.56" y="685.06" width="304.74" height="63.49" rx="31.74" fill="#3A4149"/>
+      </svg>
+      <div>
+        <div class="app-icon-name">Enfila</div>
+        <div class="app-icon-byline">A macOS app</div>
+      </div>
+    </div>
+
+    <p class="hero-audience">For people who load their own music.</p>
+    <h1>Your music plays in the order you meant.</h1>
+    <p class="hero-sub">Most players read files in the order they were copied — not the order you want. Enfila copies them in the right one.</p>
+
+    <!-- BUY ROW — keep when shipping; remove when pre-launch. -->
+    <div class="buy-row">
+      <a href="https://enfila.lemonsqueezy.com/checkout/buy/a7d39575-3db5-4ff4-99bb-8c974c9e13f9" class="buy-btn">Buy Enfila</a>
+      <span class="buy-note"><strong class="buy-price">$PRICE</strong> — one-time purchase. Mac only.</span>
+    </div>
+    <!-- /BUY ROW -->
+
+    <!-- EMAIL CAPTURE — keep when pre-launch; remove when shipping. -->
+    <form class="email-form" action="FORM_ENDPOINT" method="post">
+      <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
+      <button type="submit">Notify me</button>
+    </form>
+    <!-- /EMAIL CAPTURE -->
+
+    <div class="trust-row">
+      <span class="trust-chip">
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1.5l5 2v4c0 3.2-2.1 5.4-5 6.5-2.9-1.1-5-3.3-5-6.5v-4l5-2z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M5.8 8l1.6 1.6L10.4 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Notarized by Apple
+      </span>
+      <span class="trust-chip">
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="7" width="10" height="7" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M5.5 7V5a2.5 2.5 0 015 0v2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        Works offline — nothing leaves your Mac
+      </span>
+      <span class="trust-chip">
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.3" stroke="currentColor" stroke-width="1.3"/><path d="M5.3 8l1.8 1.8L10.8 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        One-time purchase, no subscription
+      </span>
+    </div>
+  </div>
+
+  <!-- Dual screenshot: replace img/stage-*.png with real app exports (same paths). -->
+  <div class="hero-graphic">
+    <img class="shot-back" src="img/stage-dark.png" alt="" aria-hidden="true" loading="lazy">
+    <img class="shot-front" src="img/stage-light.png" alt="The Enfila staging window: albums and tracks in a single play-order queue." loading="lazy">
+  </div>
+</section>
+
+<div class="rule"><hr></div>
+
+<!-- The problem -->
+<section class="section">
+  <div class="section-label">The problem</div>
+  <div class="section-body">
+    <p>Many devices play files in the order they were written to the disk — not by name, not by track number, not by tag. Copy an album the normal way and it plays scrambled.</p>
+    <p>Adding tracks later often breaks it further: earlier files stop showing up, so every update means writing everything again. Enfila controls the write order, so what you staged is what plays.</p>
+  </div>
+</section>
+
+<div class="rule"><hr></div>
+
+<!-- How it works -->
+<section class="section">
+  <div class="section-label">How it works</div>
+  <ol class="beats">
+    <li>Drag in albums or loose files. Tracks sort by number; albums become groups.</li>
+    <li>Arrange the order. One sequence runs across the whole queue — that's the play order.</li>
+    <li>Copy. Enfila writes one file at a time, in that exact order.</li>
+  </ol>
+</section>
+
+<div class="rule"><hr></div>
+
+<!-- Format handled -->
+<section class="section">
+  <div class="section-label">Format handled</div>
+  <div class="section-body">
+    <p>FLAC, M4A, WAV, AIFF — anything that isn't already the right format is converted before the copy. Originals are never touched. Tags carry over. You pick the bitrate.</p>
+  </div>
+</section>
+
+<div class="rule"><hr></div>
+
+<!-- Not just watches -->
+<section class="section">
+  <div class="section-label">Not just watches</div>
+  <div class="section-body">
+    <p>Sport watches, car stereos, cheap MP3 players, USB sticks — they share the same quirk and the same fix. Point Enfila at the folder and it does the ordered copy.</p>
+  </div>
+</section>
+
+<div class="rule"><hr></div>
+
+<!-- Close -->
+<section class="section" id="get">
+  <div class="section-label">Get Enfila</div>
+  <p class="close-caption">Load it once, in order. Mac only. We'll email you when there's news.</p>
+
+  <!-- EMAIL CAPTURE — keep when pre-launch; swap for the buy row below when shipping. -->
+  <form class="email-form" action="FORM_ENDPOINT" method="post">
+    <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
+    <button type="submit">Notify me</button>
+  </form>
+  <p class="form-note">No spam. One email when it ships.</p>
+  <!-- /EMAIL CAPTURE -->
+
+  <!-- BUY ROW — keep when shipping; remove when pre-launch.
+  <div class="buy-row">
+    <a href="https://enfila.lemonsqueezy.com/checkout/buy/a7d39575-3db5-4ff4-99bb-8c974c9e13f9" class="buy-btn">Buy Enfila</a>
+    <span class="buy-note"><strong class="buy-price">$PRICE</strong> — one-time purchase. Mac only.</span>
+  </div>
+  -->
+</section>
+
+<footer>
+  <span class="footer-copy">© 2026 Enfila</span>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="mailto:Hello@enfila.app">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
