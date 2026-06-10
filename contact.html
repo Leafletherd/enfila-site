@@ -38,12 +38,9 @@
 
   <p>Questions, bug reports, license help, or feature ideas — send a note below, or email us directly at <a href="mailto:Hello@enfila.app">Hello@enfila.app</a>.</p>
 
-  <form class="contact-form" action="https://formsubmit.co/Hello@enfila.app" method="POST">
-    <!-- FormSubmit config: disables captcha redirect, sets reply subject. -->
-    <input type="hidden" name="_subject" value="New message from enfila.app">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="_honey" style="display:none">
+  <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact">
+    <p hidden><label>Leave this field empty: <input name="bot-field"></label></p>
 
     <div class="field">
       <label for="cf-name">Name</label>

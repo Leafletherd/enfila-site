@@ -65,10 +65,9 @@
     -->
 
     <!-- EMAIL CAPTURE — pre-launch; swap for BUY ROW above when shipping. -->
-    <form class="email-form" action="https://formsubmit.co/notify@enfila.app" method="post">
-      <input type="hidden" name="_subject" value="Enfila — notify me at launch">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="_honey" style="display:none">
+    <form class="email-form" name="notify" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="notify">
+      <p hidden><label>Leave this field empty: <input name="bot-field"></label></p>
       <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
       <button type="submit">Notify me</button>
     </form>
@@ -176,10 +175,9 @@
     </div>
     -->
     <!-- EMAIL CAPTURE — pre-launch; swap for BUY ROW above when shipping. -->
-    <form class="email-form" action="https://formsubmit.co/notify@enfila.app" method="post">
-      <input type="hidden" name="_subject" value="Enfila — notify me at launch">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="_honey" style="display:none">
+    <form class="email-form" name="notify" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="notify">
+      <p hidden><label>Leave this field empty: <input name="bot-field"></label></p>
       <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
       <button type="submit">Notify me</button>
     </form>
