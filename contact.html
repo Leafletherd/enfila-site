@@ -36,8 +36,39 @@
   <h1>Contact</h1>
   <p class="updated">We read every message.</p>
 
-  <p>Questions, bug reports, license help, or feature ideas — email us:</p>
-  <p><a href="mailto:Hello@enfila.app">Hello@enfila.app</a></p>
+  <p>Questions, bug reports, license help, or feature ideas — send a note below, or email us directly at <a href="mailto:Hello@enfila.app">Hello@enfila.app</a>.</p>
+
+  <form class="contact-form" action="https://formsubmit.co/Hello@enfila.app" method="POST">
+    <!-- FormSubmit config: disables captcha redirect, sets reply subject. -->
+    <input type="hidden" name="_subject" value="New message from enfila.app">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+
+    <div class="field">
+      <label for="cf-name">Name</label>
+      <input id="cf-name" type="text" name="name" autocomplete="name" required>
+    </div>
+    <div class="field">
+      <label for="cf-email">Email</label>
+      <input id="cf-email" type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+    </div>
+    <div class="field">
+      <label for="cf-topic">Topic</label>
+      <select id="cf-topic" name="topic">
+        <option>Support</option>
+        <option>License / activation help</option>
+        <option>A device plays out of order</option>
+        <option>Feature idea</option>
+        <option>Something else</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="cf-message">Message</label>
+      <textarea id="cf-message" name="message" rows="6" required></textarea>
+    </div>
+    <button type="submit">Send message</button>
+  </form>
 
   <h2>Before you write</h2>
   <ul>

@@ -141,6 +141,34 @@ nav {
 .email-form button:hover { background: var(--accent-hover); }
 .form-note { font-size: 11px; color: var(--muted); margin-top: -6px; margin-bottom: 8px; }
 
+/* Contact form (multi-field) */
+.contact-form { max-width: 480px; margin-top: 1.75rem; }
+.contact-form .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.contact-form label {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--muted);
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%; padding: 11px 14px; font: inherit; font-size: 15px;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 8px; color: var(--text); outline: none;
+  transition: border-color 0.15s;
+}
+.contact-form textarea { resize: vertical; line-height: 1.6; }
+.contact-form input::placeholder { color: var(--muted); }
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus { border-color: var(--accent); }
+.contact-form button {
+  padding: 11px 22px; font-size: 14px; font-weight: 600;
+  background: var(--accent); color: var(--accent-ink);
+  border: none; border-radius: 8px; cursor: pointer;
+  transition: background 0.15s;
+}
+.contact-form button:hover { background: var(--accent-hover); }
+
 /* trust chips */
 .trust-row { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 4px; }
 .trust-chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; color: var(--stroke); white-space: nowrap; }

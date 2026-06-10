@@ -57,15 +57,18 @@
     <h1>Your music plays in the order you meant.</h1>
     <p class="hero-sub">Most players read files in the order they were copied — not the order you want. Enfila copies them in the right one.</p>
 
-    <!-- BUY ROW — keep when shipping; remove when pre-launch. -->
+    <!-- BUY ROW — restore when the app is live; swap back in for EMAIL CAPTURE below.
     <div class="buy-row">
       <a href="https://enfila.lemonsqueezy.com/checkout/buy/a7d39575-3db5-4ff4-99bb-8c974c9e13f9" class="buy-btn">Buy Enfila</a>
       <span class="buy-note"><strong class="buy-price">$9.99</strong> — one-time purchase. Mac only.</span>
     </div>
-    <!-- /BUY ROW -->
+    -->
 
-    <!-- EMAIL CAPTURE — keep when pre-launch; remove when shipping. -->
-    <form class="email-form" action="FORM_ENDPOINT" method="post">
+    <!-- EMAIL CAPTURE — pre-launch; swap for BUY ROW above when shipping. -->
+    <form class="email-form" action="https://formsubmit.co/notify@enfila.app" method="post">
+      <input type="hidden" name="_subject" value="Enfila — notify me at launch">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none">
       <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
       <button type="submit">Notify me</button>
     </form>
@@ -116,10 +119,7 @@
     </ol>
   </div>
   <div class="feature-shot">
-    <picture>
-      <source srcset="img/drag-dark.png" media="(prefers-color-scheme: dark)">
-      <img src="img/drag-light.png" alt="Dragging a track onto the Enfila window to stage it." loading="lazy">
-    </picture>
+    <img src="img/drag-light.png" alt="Dragging a loose track onto the Enfila window — it lands in the queue ready to copy." loading="lazy">
   </div>
 </section>
 
@@ -169,10 +169,21 @@
     <div class="section-label">Get Enfila</div>
     <h2>Load it once, in order.</h2>
     <p class="close-caption">A one-time purchase. Mac only. Notarized by Apple, runs entirely offline.</p>
+    <!-- BUY ROW — restore when the app is live; swap back in for EMAIL CAPTURE below.
     <div class="buy-row">
       <a href="https://enfila.lemonsqueezy.com/checkout/buy/a7d39575-3db5-4ff4-99bb-8c974c9e13f9" class="buy-btn">Buy Enfila</a>
       <span class="buy-note"><strong class="buy-price">$9.99</strong> — one-time.</span>
     </div>
+    -->
+    <!-- EMAIL CAPTURE — pre-launch; swap for BUY ROW above when shipping. -->
+    <form class="email-form" action="https://formsubmit.co/notify@enfila.app" method="post">
+      <input type="hidden" name="_subject" value="Enfila — notify me at launch">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none">
+      <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
+      <button type="submit">Notify me</button>
+    </form>
+    <!-- /EMAIL CAPTURE -->
   </div>
   <div class="feature-shot">
     <picture>

@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Enfila</title>
+        <item>
+            <title>1.0</title>
+            <pubDate>Wed, 10 Jun 2026 13:03:31 -0500</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://pub-6184d1a14eaa4844a1fc19838ff79924.r2.dev/enfila-downloads/Enfila-1.0.dmg" length="2391214" type="application/octet-stream" sparkle:edSignature="fVO380joJjs8nM/Wh8jzEtprJVtoAcNSCvm9WcMaCfZCMCpMv4psfBt0ib1URwS/rvQ4n9+FNtEo19BPtm7wAg=="/>
+        </item>
+    </channel>
+</rss>
